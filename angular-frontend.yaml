@@ -11,8 +11,6 @@ spec:
     - name: annotations
       value:
         autoscaling.knative.dev/minScale: "1"
-    - name: clusterBuilder
-      value: full
     - name: testing_pipeline_matching_labels
       value:
         apps.tanzu.vmware.com/pipeline: test-angular
@@ -24,6 +22,6 @@ spec:
         value: "dist"
   source:
     git:
-      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      url: ssh://git@github.com/jkhan24558/angular-frontend-project.git
       ref:
         branch: main
