@@ -20,6 +20,6 @@ spec:
     value: git-ssh
   source:
     git:
-      url: https://github.com/jkhan24558/tanzu-java-webapp
+      url: ssh://git@github.com/jkhan24558/tanzu-java-webapp.git
       ref:
         branch: main
