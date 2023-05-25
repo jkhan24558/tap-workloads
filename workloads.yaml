@@ -11,7 +11,7 @@ spec:
     git:
       url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo.git
       ref:
-        branch: testing
+        branch: main
     subPath: shop
   build:
     env:
@@ -49,7 +49,7 @@ spec:
     git:
       url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo.git
       ref:
-        branch: testing
+        branch: main
     subPath: orders
   build:
     env:
@@ -85,7 +85,7 @@ spec:
     git:
       url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo.git
       ref:
-        branch: testing
+        branch: main
     subPath: items
   build:
     env:
