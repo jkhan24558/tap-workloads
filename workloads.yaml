@@ -9,7 +9,7 @@ metadata:
 spec:
   source:
     git:
-      url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo
+      url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo.git
       ref:
         branch: testing
     subPath: shop
@@ -45,7 +45,7 @@ metadata:
 spec:
   source:
     git:
-      url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo
+      url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo.git
       ref:
         branch: testing
     subPath: orders
@@ -79,7 +79,7 @@ metadata:
 spec:
   source:
     git:
-      url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo
+      url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo.git
       ref:
         branch: testing
     subPath: items
