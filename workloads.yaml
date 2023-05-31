@@ -4,6 +4,7 @@ metadata:
   name: tap-otel-shop
   labels:
     apps.tanzu.vmware.com/workload-type: web
+    apps.tanzu.vmware.com/auto-configure-actuators: "true"
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: tap-otel-demo
 spec:
@@ -40,10 +41,11 @@ metadata:
   name: tap-otel-orders
   labels:
     #! Use workload-type server since Knative-based workloads does not have a stable DNS (it depends on the namespace name).
-    apps.tanzu.vmware.com/workload-type: server
+    apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: tap-otel-demo
     networking.knative.dev/visibility: cluster-local
+    apps.tanzu.vmware.com/auto-configure-actuators: "true"
 spec:
   source:
     git:
@@ -77,9 +79,10 @@ metadata:
   name: tap-otel-items
   labels:
     #! Use workload-type server since Knative-based workloads does not have a stable DNS (it depends on the namespace name).
-    apps.tanzu.vmware.com/workload-type: server
+    apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: tap-otel-demo
+    apps.tanzu.vmware.com/auto-configure-actuators: "true"
 spec:
   source:
     git:
