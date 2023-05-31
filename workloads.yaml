@@ -44,7 +44,6 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: tap-otel-demo
-    networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
 spec:
   source:
