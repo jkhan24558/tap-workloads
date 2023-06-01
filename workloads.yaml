@@ -4,7 +4,6 @@ metadata:
   name: tap-otel-shop
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    apps.tanzu.vmware.com/auto-configure-actuators: "true"
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: tap-otel-demo
 spec:
@@ -22,7 +21,6 @@ spec:
   - name: annotations
     value:
       autoscaling.knative.dev/min-scale: "1"
-      sidecar.opentelemetry.io/inject: "true"
   - name: gitops_ssh_secret
     value: git-ssh
   env:
@@ -44,7 +42,6 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: tap-otel-demo
-    apps.tanzu.vmware.com/auto-configure-actuators: "true"
 spec:
   source:
     git:
@@ -59,7 +56,7 @@ spec:
   params:
   - name: annotations
     value:
-      sidecar.opentelemetry.io/inject: "true"
+      autoscaling.knative.dev/min-scale: "1"
   - name: gitops_ssh_secret
     value: git-ssh
   env:
@@ -81,7 +78,6 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: tap-otel-demo
-    apps.tanzu.vmware.com/auto-configure-actuators: "true"
 spec:
   source:
     git:
@@ -96,7 +92,7 @@ spec:
   params:
   - name: annotations
     value:
-      sidecar.opentelemetry.io/inject: "true"
+      autoscaling.knative.dev/min-scale: "1"
   - name: gitops_ssh_secret
     value: git-ssh
   env:
