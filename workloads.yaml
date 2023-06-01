@@ -60,6 +60,7 @@ spec:
   - name: annotations
     value:
       sidecar.opentelemetry.io/inject: "true"
+      autoscaling.knative.dev/min-scale: "1"
   - name: gitops_ssh_secret
     value: git-ssh
   env:
@@ -97,6 +98,7 @@ spec:
   - name: annotations
     value:
       sidecar.opentelemetry.io/inject: "true"
+      autoscaling.knative.dev/min-scale: "1"
   - name: gitops_ssh_secret
     value: git-ssh
   env:
