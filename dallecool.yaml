@@ -15,7 +15,7 @@ spec:
       value: git-ssh
   source:
     git:
-      url: ssh://git@github.com/jkhan24558/pnc-dallecool.git
+      url: ssh://git@github.com/jkhan24558/dallecool.git
       ref:
         branch: main
   build:
