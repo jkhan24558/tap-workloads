@@ -9,7 +9,7 @@ metadata:
 spec:
   source:
     git:
-      url: ssh://git@github.com/jkhan24558/pnc-tap-otel-demo.git
+      url: ssh://git@github.com/jkhan24558/my-otel-demo.git
       ref:
         branch: main
     subPath: shop
